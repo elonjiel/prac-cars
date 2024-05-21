@@ -11,3 +11,68 @@ body {
     background: #eaeaea;
     color: #222;
 }
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transform: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #1745e3
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+     /* background: seagreen; */
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.social-media a:hover{
+    border-color: blue;
+}
+
+.social-media a i {
+    font-size: 24px;
+    color: blue;
+    transform: rotate(-45deg);
+}
