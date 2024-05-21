@@ -43,7 +43,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #1745e3
+    color: #d3a21d;
 }
 
 .social-media{
@@ -51,7 +51,6 @@ body {
     justify-content: space-between;
     width: 150px;
     height: 40px;
-     /* background: seagreen; */
 }
 
 .social-media a {
@@ -68,11 +67,99 @@ body {
 }
 
 .social-media a:hover{
-    border-color: blue;
+    border-color: #eaeaea;
 }
 
 .social-media a i {
     font-size: 24px;
-    color: blue;
+    color: #eaeaea;
     transform: rotate(-45deg);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10% 0;
+    overflow: hidden;
+}
+
+.home-content {
+    max-width: 720px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 40px;
+    color: #d3a21d;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 15px 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #d3a21d;
+    border: 2px solid #d3a21d;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color:#d3a21d;
+}
+
+.home-img {
+    position: relative;
+    right: -10%;
+    width: 450px;
+    height: 450px;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.home-img .rhombus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #eaeaea;
+    border: 25px solid #d3a21d;
+    box-shadow: -15px 15px 15px rgba(0,0,0,.2);
+}
+
+.home-img .rhombus img {
+    position: absolute;
+    max-width: 750px;
+    top: 110px;
+    left: -250px;
+    transform: rotate(-45deg);
+
+}
+
+.home .rhombus2 {
+    position: absolute;
+    top: -25%;
+    right: -20%;
+    width: 700px;
+    height: 700px;
+    background: #d3a21d;
+    transform: rotate(45deg);
+    z-index: -1;
 }
